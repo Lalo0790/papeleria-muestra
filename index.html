@@ -1,0 +1,96 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Papelería (ejemplo) · Muestra por Teacher Lalo</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bl:#2b6cf6;--bd:#1d4fc4;--y:#ffd23f;--r:#ff5d73;--g:#2ec4a6;--o:#ff9f43;--pu:#8b5cf6;--c:#fffdf7;--t:#26304a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Nunito,system-ui,sans-serif;color:var(--t);background:var(--c);background-image:linear-gradient(#e8eefc 1px,transparent 1px);background-size:100% 32px}
+h1,h2,h3{font-family:'Baloo 2',sans-serif;line-height:1.05;margin:0}a{color:inherit}
+.strip{background:#ffe066;color:#4d3a00;text-align:center;font-size:.8rem;font-weight:800;padding:7px 10px}
+.c{background:#ffe066;color:#5c4400;font-size:.68rem;font-weight:800;padding:2px 6px;border-radius:5px;white-space:nowrap}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1100px;margin:auto}
+.logo{font-family:'Baloo 2';font-weight:800;font-size:1.45rem;color:var(--bd);text-decoration:none}.logo span{color:var(--r)}
+nav .lk a{margin-left:18px;text-decoration:none;font-weight:700}@media(max-width:760px){nav .lk{display:none}}
+.btn{display:inline-flex;gap:8px;align-items:center;background:#25d366;color:#fff;text-decoration:none;font-weight:800;padding:13px 22px;border-radius:40px;box-shadow:0 6px 0 #179c4b;transition:transform .15s}.btn:hover{transform:translateY(-2px)}.btn.o{background:#fff;color:var(--bd);box-shadow:0 6px 0 #cdd9f7}
+.hero{max-width:1100px;margin:auto;padding:24px 20px 60px;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,7vw,4.3rem);margin:12px 0}.hero h1 em{font-style:normal;color:var(--bl);background:linear-gradient(transparent 60%,var(--y) 60%)}.hero p{font-size:1.1rem;max-width:470px}
+.tag{display:inline-block;background:#fff;border:2px dashed var(--r);color:var(--r);font-weight:800;padding:5px 14px;border-radius:30px;font-size:.85rem}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.art{position:relative;aspect-ratio:1;background:var(--y);border-radius:38% 62% 55% 45%/48% 40% 60% 52%;display:grid;place-items:center;animation:mor 10s ease-in-out infinite}
+.art .big{font-size:clamp(7rem,22vw,11rem);animation:bob 3s ease-in-out infinite}
+.art .f{position:absolute;font-size:2.3rem;animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px) rotate(-5deg)}}@keyframes mor{50%{border-radius:55% 45% 40% 60%/40% 58% 42% 60%}}
+.pencil{display:block;margin:0 auto;width:240px;max-width:60%}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:10px}.art{max-width:300px;margin:auto}}
+section{max-width:1100px;margin:auto;padding:56px 20px}
+.h{text-align:center;margin-bottom:32px}.h h2{font-size:clamp(2rem,5vw,2.9rem)}.h p{opacity:.75;margin:8px 0 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:#fff;border:2.5px solid var(--t);border-radius:20px;padding:22px;box-shadow:6px 6px 0 var(--t);transition:transform .2s}.card:hover{transform:translate(-2px,-2px) rotate(-.5deg)}
+.card .i{font-size:2.2rem;width:62px;height:62px;display:grid;place-items:center;border-radius:16px;margin-bottom:12px}
+.card h3{font-size:1.35rem;margin-bottom:6px}.card p{margin:0;opacity:.8}
+.lista{background:var(--bl);color:#fff;border-radius:30px;padding:40px 30px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;position:relative;overflow:hidden}
+.lista h2{font-size:clamp(2rem,5vw,3rem)}.lista ol{padding-left:20px;font-size:1.05rem;line-height:1.8}
+.note{background:#fff;color:var(--t);border-radius:8px;padding:20px 22px 20px 44px;transform:rotate(2deg);box-shadow:0 14px 30px #0004;background-image:linear-gradient(#dbe5fb 1px,transparent 1px),linear-gradient(90deg,transparent 30px,#ff9aa8 30px,#ff9aa8 32px,transparent 32px);background-size:100% 28px,100% 100%;line-height:28px;font-family:'Baloo 2';font-size:1.05rem}
+.note b{color:var(--r)}
+@media(max-width:760px){.lista{grid-template-columns:1fr;padding:30px 22px}}
+.prod{background:#fff;border-radius:20px;overflow:hidden;border:2px solid #e7ebf5}.prod .e{font-size:3.4rem;text-align:center;padding:24px 0}.prod div{padding:12px 16px}.prod b{display:block;font-size:1.05rem}.prod .p{color:var(--bd);font-weight:800;font-size:1.1rem}
+.suc{background:#fff;border-radius:22px;overflow:hidden;border:2.5px solid var(--t)}.map{height:160px;background:repeating-linear-gradient(45deg,#e9effd 0 14px,#f5f8ff 14px 28px);display:grid;place-items:center;font-weight:800;color:#6b7aa3}.suc div.b{padding:18px}.suc h3{font-size:1.4rem}.suc p{margin:6px 0}
+.steps{counter-reset:s}.step{text-align:center;padding:10px}.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:56px;height:56px;margin:0 auto 10px;border-radius:50%;background:var(--r);color:#fff;font:800 1.6rem 'Baloo 2'}
+details{background:#fff;border:2px solid #e7ebf5;border-radius:16px;padding:16px 20px;margin-bottom:10px}summary{font-weight:800;cursor:pointer}details p{margin:10px 0 0;opacity:.85}
+.cta{text-align:center;background:var(--y);border-radius:30px;padding:46px 20px}.cta h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:16px}
+footer{text-align:center;padding:30px 20px 90px;font-size:.85rem;opacity:.7}
+.wa{position:fixed;right:18px;bottom:18px;width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px #0004;z-index:9;animation:pulse 2s infinite}.wa svg{width:34px}
+@keyframes pulse{50%{box-shadow:0 0 0 12px #25d36633,0 8px 24px #0004}}
+.rv{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}.rv.on{opacity:1;transform:none}
+</style></head><body>
+<div class="strip">✏️ Muestra de diseño preparada por Teacher Lalo · nombres, precios y datos son de ejemplo</div>
+<nav><a class="logo" href="#">Papelería <span>(ejemplo)</span></a><div class="lk"><a href="#servicios">Servicios</a><a href="#lista">Listas escolares</a><a href="#productos">Productos</a><a href="#sucursales">Sucursales</a><a href="#faq">Preguntas</a></div></nav>
+<header class="hero">
+<div><span class="tag">✂️ Escolar · Oficina · Copias</span>
+<h1>Todo para la escuela y la oficina, <em>sin vueltas</em> ✏️</h1>
+<p>Útiles, copias, impresiones, engargolados y regalos. Mándanos tu lista escolar por WhatsApp y te la tenemos lista para recoger.</p>
+<div class="ctas"><a class="btn" href="bot/">💬 Pedir por WhatsApp</a><a class="btn o" href="#lista">📝 Mandar mi lista</a></div></div>
+<div class="art"><span class="big">📚</span><span class="f" style="top:8%;left:12%">✏️</span><span class="f" style="top:14%;right:10%;animation-delay:.6s">📐</span><span class="f" style="bottom:12%;left:8%;animation-delay:1s">🖍️</span><span class="f" style="bottom:8%;right:16%;animation-delay:1.4s">✂️</span><span class="f" style="top:46%;right:2%;animation-delay:.3s">📎</span></div>
+</header>
+<svg class="pencil" viewBox="0 0 240 24"><rect x="20" y="4" width="180" height="16" rx="2" fill="#ffd23f"/><rect x="20" y="4" width="180" height="5" fill="#ffe27a"/><rect x="2" y="4" width="22" height="16" rx="4" fill="#ff8fa0"/><rect x="20" y="4" width="10" height="16" fill="#c7cede"/><path d="M200 4 L228 12 L200 20Z" fill="#f2c79b"/><path d="M220 9.7 L228 12 L220 14.3Z" fill="#26304a"/></svg>
+<section id="servicios"><div class="h rv"><h2>¿Qué encuentras aquí? 🖍️</h2><p>Todo en un solo lugar, cerca de ti.</p></div>
+<div class="grid">
+<div class="card rv"><div class="i" style="background:#dbe6ff">🎒</div><h3>Artículos escolares y de oficina</h3><p>Cuadernos, plumas, colores, carpetas, hojas y más de las marcas que pide la escuela.</p></div>
+<div class="card rv"><div class="i" style="background:#ffe0e5">🖨️</div><h3>Copias e impresiones</h3><p>Blanco y negro o color, desde tu USB, correo o WhatsApp.</p></div>
+<div class="card rv"><div class="i" style="background:#d6f6ee">📘</div><h3>Engargolado y enmicado</h3><p>Tareas, tesis, credenciales y documentos protegidos al momento.</p></div>
+<div class="card rv"><div class="i" style="background:#fff2c2">📸</div><h3>Impresión de fotos</h3><p>Fotos tamaño infantil, postal y para tareas escolares.</p></div>
+<div class="card rv"><div class="i" style="background:#ede4fb">🎁</div><h3>Regalos y manualidades</h3><p>Foami, papel china, diamantina, globos, envolturas y detalles.</p></div>
+<div class="card rv"><div class="i" style="background:#ffe7cf">📝</div><h3>Listas escolares</h3><p>Nos mandas la lista, te cotizamos y te la armamos completa.</p></div>
+</div></section>
+<section id="lista"><div class="lista rv"><div><h2>Manda tu lista escolar y te la armamos 📝</h2>
+<ol><li>Toma foto de tu lista o escríbela por WhatsApp.</li><li>Te mandamos la cotización.</li><li>La armamos y te avisamos cuando esté lista.</li><li>Pasas por ella a tu sucursal favorita.</li></ol>
+<a class="btn" href="bot/">📲 Mandar mi lista</a></div>
+<div class="note">Lista 3° primaria<br>✔ 5 cuadernos profesionales<br>✔ Caja de colores 12 pzs<br>✔ Lápiz, goma y sacapuntas<br>✔ Tijeras punta roma<br><b>¡Lista armada! ✅</b> <span class="c">ejemplo</span></div></div></section>
+<section id="productos"><div class="h rv"><h2>Productos 🛒</h2><p>Algunas categorías · <span class="c">precios ejemplo</span></p></div>
+<div class="grid">
+<div class="prod rv"><div class="e" style="background:#dbe6ff">📓</div><div><b>Cuadernos</b>desde <span class="p">$25</span> <span class="c">precio ejemplo</span></div></div>
+<div class="prod rv"><div class="e" style="background:#ffe0e5">🖍️</div><div><b>Colores y crayolas</b>desde <span class="p">$35</span> <span class="c">precio ejemplo</span></div></div>
+<div class="prod rv"><div class="e" style="background:#d6f6ee">🖊️</div><div><b>Plumas y lápices</b>desde <span class="p">$6</span> <span class="c">precio ejemplo</span></div></div>
+<div class="prod rv"><div class="e" style="background:#fff2c2">📁</div><div><b>Oficina y archivo</b>desde <span class="p">$12</span> <span class="c">precio ejemplo</span></div></div>
+<div class="prod rv"><div class="e" style="background:#ede4fb">🎨</div><div><b>Manualidades</b>desde <span class="p">$8</span> <span class="c">precio ejemplo</span></div></div>
+<div class="prod rv"><div class="e" style="background:#ffe7cf">🎁</div><div><b>Regalos y envolturas</b>desde <span class="p">$15</span> <span class="c">precio ejemplo</span></div></div>
+</div></section>
+<section id="sucursales"><div class="h rv"><h2>Nuestras sucursales 📍</h2><p>Recoge tu pedido en la que te quede más cerca.</p></div>
+<div class="grid">
+<div class="suc rv"><div class="map">🗺️ Mapa <span class="c">confirmar</span></div><div class="b"><h3>Sucursal Centro</h3><p>📍 Dirección <span class="c">confirmar</span></p><p>🕘 Lun a Sáb · horario <span class="c">confirmar</span></p><p>📞 Teléfono <span class="c">confirmar</span></p></div></div>
+<div class="suc rv"><div class="map">🗺️ Mapa <span class="c">confirmar</span></div><div class="b"><h3>Sucursal 2</h3><p>📍 Dirección <span class="c">confirmar</span></p><p>🕘 Lun a Sáb · horario <span class="c">confirmar</span></p><p>📞 Teléfono <span class="c">confirmar</span></p></div></div>
+</div></section>
+<section><div class="h rv"><h2>¿Cómo pedir? 🚀</h2></div><div class="grid steps">
+<div class="step rv"><h3>Escríbenos</h3><p>Por WhatsApp, a cualquier hora.</p></div>
+<div class="step rv"><h3>Te cotizamos</h3><p>Lista, impresiones o productos.</p></div>
+<div class="step rv"><h3>Lo preparamos</h3><p>Te avisamos cuando esté listo.</p></div>
+<div class="step rv"><h3>Recoges</h3><p>En tu sucursal, sin filas.</p></div></div></section>
+<section id="faq"><div class="h rv"><h2>Preguntas frecuentes 🤔</h2></div>
+<details class="rv"><summary>¿Puedo mandar mi lista escolar en foto?</summary><p>Sí. Mándala por WhatsApp y te respondemos con la cotización.</p></details>
+<details class="rv"><summary>¿Cómo mando archivos para imprimir?</summary><p>Por WhatsApp o correo, en PDF, Word o imagen. Te avisamos cuando estén listos.</p></details>
+<details class="rv"><summary>¿Cuánto tarda una lista escolar?</summary><p>Depende del tamaño de la lista <span class="c">confirmar</span>.</p></details>
+<details class="rv"><summary>¿Qué formas de pago aceptan?</summary><p>Efectivo, tarjeta y transferencia <span class="c">confirmar</span>.</p></details>
+<details class="rv"><summary>¿Tienen servicio a domicilio?</summary><p><span class="c">confirmar</span></p></details></section>
+<section><div class="cta rv"><h2>¿Ya tienes tu lista? ✏️</h2><a class="btn" href="bot/">💬 Escríbenos por WhatsApp</a></div></section>
+<footer>Papelería (ejemplo) · Sitio de muestra hecho por Teacher Lalo · Datos ilustrativos</footer>
+<a class="wa" href="bot/" aria-label="WhatsApp"><svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(el=>io.observe(el));</script>
+</body></html>

@@ -1,0 +1,89 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><title>Demo asistente | Papelería (ejemplo)</title><style>
+:root{--d:#1d4fc4;--r:#2b6cf6;--l:#f4f5f7;--bg:#fffbea}*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:radial-gradient(circle at 20% 10%,#dbe6ff,transparent 50%),var(--bg);color:#2d2a32}
+.c{background:#ffe066;color:#5c4400;font-size:.68rem;font-weight:700;padding:1px 5px;border-radius:4px;white-space:nowrap}
+.stage{display:flex;align-items:center;justify-content:center;gap:56px;min-height:100%;padding:24px}
+.side{max-width:400px}.side h1{font-size:2.6rem;line-height:1.08;margin:10px 0 14px}.side h1 em{color:var(--r);font-style:normal}.side p{opacity:.8}
+.kick{display:inline-block;background:#2b6cf622;color:#1d4fc4;border:1px solid #2b6cf655;padding:5px 12px;border-radius:30px;font-size:.8rem;font-weight:700}
+.ben{list-style:none;padding:0;margin:22px 0}.ben li{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid #dbe2f3;border-radius:14px;padding:11px 14px;margin-bottom:9px}.ben i{font-style:normal;font-size:1.3rem;width:38px;height:38px;display:grid;place-items:center;background:var(--r);border-radius:10px;flex:none}.ben b{display:block}.ben span{font-size:.85rem;opacity:.7}
+.by{font-size:.8rem;opacity:.55}
+.phone{width:390px;height:800px;max-height:calc(100vh - 48px);background:#000;border-radius:46px;padding:12px;box-shadow:0 30px 80px #000a,0 0 0 2px #333 inset;flex:none}
+.scr{height:100%;border-radius:36px;overflow:hidden;display:flex;flex-direction:column;background:#efe9e1}
+.demo{background:#ffe066;color:#3d2e00;font-size:.75rem;font-weight:700;text-align:center;padding:6px 10px;line-height:1.3}.demo small{display:block;font-weight:500;opacity:.8}
+.top{background:var(--d);display:flex;align-items:center;gap:10px;padding:10px 12px}
+.av{width:40px;height:40px;border-radius:50%;background:var(--r);display:grid;place-items:center;flex:none}
+.top b{font-size:.98rem;display:block}.top small{font-size:.75rem;color:#86efac}.top .rs{margin-left:auto;background:#ffffff1a;border:0;color:#fff;font:inherit;font-size:.72rem;padding:6px 10px;border-radius:20px;cursor:pointer}
+.chat{flex:1;overflow-y:auto;padding:14px 10px;background-color:#ece5dc;background-image:radial-gradient(#0000000a 1px,transparent 1px);background-size:14px 14px}
+.day{text-align:center;margin:0 0 10px}.day span{background:#fff;color:#555;font-size:.7rem;padding:4px 10px;border-radius:8px;box-shadow:0 1px 1px #0001}
+.m{max-width:84%;padding:7px 10px 5px;border-radius:12px;margin:4px 0;font-size:.9rem;line-height:1.4;color:#111;box-shadow:0 1px 1px #0002;animation:pop .25s ease;position:relative;word-wrap:break-word}
+.m.b{background:#fff;border-top-left-radius:3px}.m.u{background:#d9fdd3;margin-left:auto;border-top-right-radius:3px}
+.t{display:block;text-align:right;font-size:.64rem;color:#777;margin-top:2px}.tk{color:#3b82f6;margin-left:3px}
+@keyframes pop{from{opacity:0;transform:translateY(6px) scale(.97)}to{opacity:1;transform:none}}
+.typing{background:#fff;display:inline-flex;gap:4px;padding:12px 14px;border-radius:12px;border-top-left-radius:3px;margin:4px 0}.typing i{width:7px;height:7px;border-radius:50%;background:#999;animation:bl 1s infinite}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes bl{0%,60%,100%{opacity:.3;transform:none}30%{opacity:1;transform:translateY(-3px)}}
+.cars{display:flex;gap:8px;overflow-x:auto;margin:6px 0;padding-bottom:4px}.car{flex:none;width:200px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 2px #0002;color:#111;animation:pop .3s}
+.car svg{display:block;width:100%}.car div{padding:8px 10px;font-size:.8rem}.car b{display:block;font-size:.9rem}.car .p{color:var(--r);font-weight:800}
+.card{background:#fff;border-radius:12px;overflow:hidden;max-width:88%;margin:6px 0;box-shadow:0 1px 2px #0002;color:#111;animation:pop .3s}.card h4{margin:0;background:var(--d);color:#fff;padding:9px 12px;font-size:.88rem}.card h4 em{color:#d9f7e4;font-style:normal}
+.card dl{margin:0;padding:8px 12px;font-size:.82rem;display:grid;grid-template-columns:auto 1fr;gap:4px 10px}.card dt{color:#777}.card dd{margin:0;font-weight:600}
+.card .ok{background:#dcfce7;color:#166534;font-size:.78rem;padding:7px 12px;font-weight:600}
+.ph{display:flex;gap:4px}.photo{width:110px;height:82px;border-radius:8px;font-size:.68rem!important;background:linear-gradient(135deg,#374151,#111827);display:grid;place-items:center;color:#fff;font-size:.75rem;margin-bottom:3px}
+.qr{display:flex;flex-wrap:wrap;gap:6px;padding:8px 10px;background:#f7f3ee;border-top:1px solid #0001;max-height:40%;overflow-y:auto}.qr:empty{display:none}
+.qr button{font:inherit;font-size:.84rem;background:#fff;color:var(--d);border:1.5px solid var(--r);padding:7px 12px;border-radius:20px;cursor:pointer;font-weight:600;animation:pop .25s}.qr button:hover{background:var(--r);color:#fff}.qr button.alt{border-color:#9ca3af;color:#555}
+.in{display:flex;gap:8px;padding:8px 10px 12px;background:#f7f3ee}.in input{flex:1;font:inherit;font-size:.9rem;border:0;border-radius:22px;padding:10px 14px;outline:none;color:#111}.in button{width:42px;height:42px;border-radius:50%;border:0;background:var(--r);color:#fff;font-size:1.1rem;cursor:pointer}
+.mob{display:none}
+@media(max-width:900px){.side{display:none}.stage{padding:0}.phone{width:100%;height:100vh;height:100dvh;max-height:none;border-radius:0;padding:0;box-shadow:none}.scr{border-radius:0}}
+.side h1 em{color:#ff5d73}
+</style></head><body>
+<div class="stage">
+<div class="side"><span class="kick">DEMO INTERACTIVA ✏️</span><h1>Tu asistente que <em>cotiza listas y copias</em> 24/7 📚</h1>
+<p>Así contestaría el WhatsApp de <b>Papelería (ejemplo)</b>. Pruébalo 👉</p>
+<ul class="ben"><li><i>📝</i><div><b>Recibe listas escolares</b><span>En foto o escritas, y las pasa a cotizar.</span></div></li>
+<li><i>🖨️</i><div><b>Toma pedidos de impresión</b><span>Tipo, cantidad, color y sucursal.</span></div></li>
+<li><i>📍</i><div><b>Da sucursales y horarios</b><span>Sin que nadie tenga que contestar.</span></div></li>
+<li><i>💁‍♀️</i><div><b>Pasa con una persona</b><span>Con el pedido ya resumido.</span></div></li></ul>
+<p class="by">Demo ilustrativa preparada por Teacher Lalo. Productos, precios y datos son de ejemplo.</p></div>
+<div class="phone"><div class="scr">
+<div class="demo">Demo: así contestaría tu asistente por WhatsApp<small>Es un ejemplo: productos, precios y datos son ilustrativos</small></div>
+<div class="top"><div class="av" style="font-size:1.3rem;background:#ffd23f">✏️</div>
+<div><b>Papelería (ejemplo) 📚</b><small id="st" style="color:#dbe6ff">en línea</small></div><button class="rs" onclick="reset()">↺ Reiniciar</button></div>
+<div class="chat" id="chat"></div><div class="qr" id="qr"></div>
+<form class="in" id="f"><input id="txt" placeholder="Escribe un mensaje…" autocomplete="off"><button aria-label="Enviar">➤</button></form>
+</div></div></div>
+<script>
+const C='<span class="c">[confirmar]</span>',FAST=location.search.includes('fast');
+const chat=document.getElementById('chat'),qr=document.getElementById('qr'),st=document.getElementById('st');
+let S={},busy=false,expect=null,q=Promise.resolve();
+const now=()=>new Date().toLocaleTimeString('es-MX',{hour:'numeric',minute:'2-digit'});
+const sleep=ms=>new Promise(r=>setTimeout(r,FAST?5:ms));
+const down=()=>chat.scrollTop=chat.scrollHeight;
+function add(html,cls){const d=document.createElement('div');d.className='m '+cls;d.innerHTML=html+`<span class="t">${now()}${cls=='u'?'<span class="tk">✓✓</span>':''}</span>`;chat.appendChild(d);down();return d}
+function raw(html){const d=document.createElement('div');d.innerHTML=html;chat.appendChild(d.firstElementChild);down()}
+async function bot(...ms){for(const m of ms){const t=document.createElement('div');t.className='typing';t.innerHTML='<i></i><i></i><i></i>';chat.appendChild(t);st.textContent='escribiendo…';down();
+ await sleep(Math.min(500+(typeof m=='string'?m.length*12:400),1600));t.remove();st.textContent='en línea';typeof m=='string'?add(m,'b'):raw(m.html);await sleep(250)}}
+function opts(list,ex){qr.innerHTML='';expect=ex||null;list.forEach(o=>{const[l,fn,alt]=Array.isArray(o)?o:[o,null];const b=document.createElement('button');b.type='button';b.textContent=l;if(alt)b.className='alt';b.onclick=()=>pick(l,fn);qr.appendChild(b)});down()}
+function pick(l,fn){if(busy)return;qr.innerHTML='';add(esc(l),'u');run(()=>(fn||expect)(l))}
+function run(f){busy=true;q=q.then(f).catch(e=>console.error(e)).finally(()=>busy=false)}
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const END=[['🏠 Volver al menú',()=>menu(true)],['↺ Reiniciar demo',()=>reset(),1]];
+const folio=p=>p+'-'+Math.floor(1000+Math.random()*9000);
+function summary(title,rows,ok){return{html:`<div class="card"><h4>${title}</h4><dl>${rows.map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl><div class="ok">${ok}</div></div>`}}
+const PE='<span class="c">precio ejemplo</span>';
+const SUC=['📍 Sucursal Centro','📍 Sucursal 2'];
+const PROD=[['📓','Cuaderno profesional','$25','#dbe6ff'],['🖍️','Colores 12 pzs','$35','#ffe0e5'],['🖊️','Pluma (pieza)','$6','#d6f6ee'],['📁','Folder / carpeta','$12','#fff2c2'],['🎨','Foami y manualidades','$8','#ede4fb'],['🎁','Papel regalo','$15','#ffe7cf']];
+const MENU=()=>[['📝 1. Cotizar lista escolar',lista],['🖨️ 2. Impresiones y copias',impr],['🛒 3. Ver productos',productos],['📍 4. Sucursales y horarios',sucursales],['💁‍♀️ 5. Hablar con alguien',persona]];
+async function menu(back){S={};await bot(back?'¿Te ayudo con algo más? ✏️':'¿En qué te ayudo? Toca una opción o escríbeme 👇');opts(MENU())}
+async function start(){chat.innerHTML='<div class="day"><span>Hoy</span></div>';await bot('¡Hola! 📚 Bienvenid@ a <b>Papelería (ejemplo)</b>','Soy el asistente virtual. Cotizo tu lista escolar, tomo pedidos de impresión y te digo dónde estamos.');await menu()}
+function reset(){qr.innerHTML='';run(start)}
+async function lista(){await bot('¡Claro! 📝 Mándame tu lista: escríbela abajo o toca "Enviar foto".');opts([['📷 Enviar foto de la lista',async()=>{raw('<div class="m u"><div class="photo">📄 lista_escolar.jpg</div><span class="t">'+now()+'<span class="tk">✓✓</span></span></div>');await listaOk('Foto de la lista')}]],async t=>listaOk(t));qr.querySelector('button')}
+async function listaOk(t){S.lista=t;await bot('¡Recibida! ✅ ¿Para qué grado es?');opts(['Preescolar','Primaria','Secundaria','Preparatoria'],async g=>{S.g=g;await bot('¿En qué sucursal la quieres recoger?');opts(SUC,async s=>{await bot('¡Perfecto! 🙌',summary('📝 Lista escolar · <em>'+folio('LE')+'</em>',[['Lista',S.lista.length>80?S.lista.slice(0,80)+'…':S.lista],['Grado',S.g],['Recoger en',s.replace('📍 ','')]],'Te mandamos la cotización por aquí. Tiempo de respuesta [confirmar].'));opts(END)})})}
+async function impr(){await bot('¡Va! 🖨️ ¿Qué necesitas?');opts(['Copias','Impresión de archivo','Impresión de fotos','Engargolado','Enmicado'],async tp=>{S.tp=tp;await bot('¿Cuántas piezas / hojas?');opts(['1 a 10','11 a 50','51 a 100','Más de 100'],async n=>{S.n=n;await bot('¿Blanco y negro o color?');opts(['⚫ Blanco y negro','🌈 Color'],async c=>{S.c=c;
+ const go=async()=>{await bot('¿En qué sucursal lo recoges?');opts(SUC,async s=>{await bot('¡Listo! ✅',summary('🖨️ Pedido · <em>'+folio('IM')+'</em>',[['Servicio',S.tp],['Cantidad',S.n],['Tipo',S.c],['Recoger en',s.replace('📍 ','')]],'Te avisamos por aquí cuando esté listo y cuánto es.'));opts(END)})};
+ if(/archivo|fotos/i.test(S.tp)){await bot('Mándame tu archivo por aquí (PDF, Word o imagen) 📎');opts([['📎 Enviar archivo',async()=>{raw('<div class="m u">📄 <b>tarea.pdf</b> · 2 págs<span class="t">'+now()+'<span class="tk">✓✓</span></span></div>');await bot('¡Recibido! 👌');await go()}]])}else await go()})})})}
+async function productos(){await bot('Algunos productos 😍 (desliza)',{html:'<div class="cars">'+PROD.map(([e,n,p,c])=>'<div class="car"><div style="background:'+c+';font-size:3.2rem;text-align:center;padding:18px 0">'+e+'</div><div><b>'+n+'</b><span class="p">'+p+'</span> '+PE+'</div></div>').join('')+'</div>'},'¿Quieres que te cotice tu lista completa?');opts([['📝 Cotizar mi lista',lista],...END])}
+async function sucursales(){await bot({html:'<div class="card"><h4>📍 Sucursal Centro</h4><dl><dt>Dirección</dt><dd>'+C+'</dd><dt>Horario</dt><dd>Lun a Sáb '+C+'</dd><dt>Tel</dt><dd>'+C+'</dd></dl></div>'},{html:'<div class="card"><h4>📍 Sucursal 2</h4><dl><dt>Dirección</dt><dd>'+C+'</dd><dt>Horario</dt><dd>Lun a Sáb '+C+'</dd><dt>Tel</dt><dd>'+C+'</dd></dl></div>'});opts(END)}
+async function persona(){await bot('¡Claro! 💁‍♀️ Escríbeme qué necesitas y se lo paso a alguien del equipo.');qr.innerHTML='';expect=async t=>{await bot('¡Gracias! Ya lo pasé 🙌',summary('💁‍♀️ Mensaje · <em>'+folio('AT')+'</em>',[['Mensaje',t],['Estado','Enviado']],'Una persona te contesta en cuanto pueda.'));opts(END)}}
+const KW=[[/lista|escolar|[uú]tiles/i,lista],[/copia|impri|engarg|enmic|foto/i,impr],[/producto|precio|cuaderno|color|ver/i,productos],[/sucursal|horario|direcci|d[oó]nde|ubica/i,sucursales],[/persona|humano|hablar|alguien/i,persona],[/^1$/,lista],[/^2$/,impr],[/^3$/,productos],[/^4$/,sucursales],[/^5$/,persona],[/men[uú]|inicio|hola|buen/i,()=>menu(true)]];
+document.getElementById('f').onsubmit=e=>{e.preventDefault();const i=document.getElementById('txt'),v=i.value.trim();if(!v||busy)return;i.value='';qr.innerHTML='';add(esc(v),'u');
+ run(async()=>{if(expect){const f=expect;expect=null;return f(v)}const k=KW.find(([r])=>r.test(v));if(k)return k[1]();await bot('Perdón, no te entendí bien 🙈 ¿Me ayudas eligiendo una opción?');opts(MENU())})};
+reset();
+</script></body></html>
